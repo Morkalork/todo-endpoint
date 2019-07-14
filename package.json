@@ -10,6 +10,10 @@
     "build": "rollup -c -w",
     "start": "node bin/todo-endpoint.bin.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morkalork/todo-endpoint.git"
+  },
   "keywords": ["todo", "endpoint", "wholesome"],
   "author": "Maffelu",
   "license": "MIT",
