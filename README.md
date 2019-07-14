@@ -10,7 +10,7 @@ To install this package in your package you can fetch it from npm, like this:
 npm install --save todo-endpoint
 ```
 
-Then just run it by calling, either directly or in a script:
+Then just run it by calling it, either directly or in a script:
 
 Directly, in your prompt:
 
