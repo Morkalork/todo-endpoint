@@ -40,6 +40,8 @@ The only real option is to set the port on which to run the server. It defaults 
 ./node_modules/.bin/todo-endpoint 5000
 ```
 
+Once you start it you will have a server running on (by default) http://localhost:3000 with one endpoint, http://localhost:3000/todo.
+
 ## API References:
 
 The todo object looks like this:
