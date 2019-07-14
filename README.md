@@ -86,6 +86,7 @@ fetch('http://localhost:3000/todo/12').then(todo => {
 _Saves or updates a todo item. If the items "id" property is set, an update will be performed, otherwise a save._
 
 ```js
+// Save
 const newItem = {
   title: 'Test',
   description: 'This is clearly a test todo item'
@@ -94,7 +95,21 @@ const newItem = {
 fetch('http://localhost:3000/todo', {
   method: 'post',
   body: JSON.stringify(newItem)
-}).then(() => {
+}).then((newId) => {
+  // Do something after the save...
+});
+
+// Update
+const newItem = {
+  id: 5,
+  title: 'Test',
+  description: 'This is clearly a test todo item'
+};
+
+fetch('http://localhost:3000/todo', {
+  method: 'post',
+  body: JSON.stringify(newItem)
+}).then((currentId) => {
   // Do something after the save...
 });
 ```

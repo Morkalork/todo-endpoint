@@ -36,7 +36,7 @@ export default app => {
 
     saveTodos(todos);
 
-    response.send('ok');
+    response.send(newTodo.id.toString());
   });
 
   app.delete('/todo/:todoId', async (request, response) => {

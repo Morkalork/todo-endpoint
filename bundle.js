@@ -13,9 +13,10 @@ require('core-js/modules/es.array.find-index');
 require('core-js/modules/es.array.reduce');
 require('core-js/modules/es.date.now');
 require('core-js/modules/es.date.to-string');
-require('core-js/modules/es.parse-int');
-require('regenerator-runtime/runtime');
 require('core-js/modules/es.object.to-string');
+require('core-js/modules/es.parse-int');
+require('core-js/modules/es.regexp.to-string');
+require('regenerator-runtime/runtime');
 require('core-js/modules/es.promise');
 var fs = _interopDefault(require('fs'));
 require('path');
@@ -259,7 +260,7 @@ var router = (function (app) {
               }
 
               saveTodos(todos);
-              response.send('ok');
+              response.send(newTodo.id.toString());
 
             case 9:
             case "end":
